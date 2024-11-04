@@ -42,6 +42,11 @@
   /* margin-bottom: 16px; */
 }
 
+.servicos-lista li:nth-of-type(3) .servicos-img img {
+  object-position: center top; /* ou 'scale-down' ou 'none', dependendo do ajuste desejado */
+  /* Ajustes adicionais se necessário */
+}
+
 .servicos-lista h3 {
   margin-bottom: 8px;
   display: flex;
