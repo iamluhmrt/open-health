@@ -37,3 +37,6 @@ img[src$='.png'] {
   border-radius: 4px;
 }
 
+#bold-text {
+  font-weight: 700;
+}

@@ -1,5 +1,5 @@
 .header-bg {
-  background-color: var(--cor-0);
+  background-color: var(--cor-12);
 }
 
 .header {
@@ -13,6 +13,7 @@
 }
 
 .header-menu {
+  color: white;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
@@ -29,7 +30,7 @@
   display: block;
   height: 2px;
   width: 0px;
-  background: var(--cor-12);
+  background: var(--cor-p6);
   margin-top: 4px;
   transition: 0.3s;
   position: absolute;

@@ -17,8 +17,9 @@
   --cor-p3: #a66f00;
   --cor-p4: #664400;
   --cor-p5: #332200;
-  --cor-p6: #303387;
+  --cor-p6: #ff638b;
   --cor-p7: #e71c1c;
+  --cor-background: #03506f;
 }
 
 .cor-0 {
@@ -80,4 +81,7 @@
 }
 .cor-p7 {
   color: var(--cor-p7);
+}
+.cor-background {
+  color: var(--cor-background);
 }
