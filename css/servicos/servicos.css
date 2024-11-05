@@ -1,5 +1,9 @@
 .servicos-bg {
-  background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
+  background: linear-gradient(
+    to right,
+    var(--cor-0) 30%,
+    var(--cor-background) 0%
+  );
 }
 
 .servicos {
@@ -78,7 +82,7 @@
 
 @media (max-width: 800px) {
   .servicos-bg {
-    background: var(--cor-11);
+    background: var(--cor-background);
   }
   .servicos {
     grid-template-columns: 1fr;
