@@ -1,6 +1,9 @@
 .introducao-bg {
-  background: var(--cor-background) url('../../img/dec/bottom-left.svg')
-    no-repeat bottom 160px left 20px;
+  background-image: linear-gradient(to left, var(--cor-background), #022b3f),
+    url('../../img/dec/bottom-left.svg');
+  background-position: center, bottom 160px left 20px;
+  background-repeat: no-repeat;
+
   box-shadow: inset 0 -120px var(--cor-0);
 }
 
