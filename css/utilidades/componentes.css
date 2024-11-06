@@ -83,7 +83,7 @@
 .titulo-bg {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--cor-background);
+  background: #022b3f;
 }
 
 .titulo {

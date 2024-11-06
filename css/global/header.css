@@ -43,6 +43,7 @@
 @media (max-width: 800px) {
   .header-menu {
     gap: 20px;
+    padding: 8px 8px;
   }
   .header-menu a {
     background: var(--cor-6);
@@ -62,7 +63,7 @@
     gap: 12px;
   }
   .header-menu a {
-    padding: 8px 12px;
+    padding: 4px 4px;
     font-size: 14px;
   }
 }

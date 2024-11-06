@@ -82,7 +82,7 @@
 
 @media (max-width: 800px) {
   .servicos-bg {
-    background: var(--cor-background);
+    background: linear-gradient(to left, var(--cor-background), #022b3f);
   }
   .servicos {
     grid-template-columns: 1fr;

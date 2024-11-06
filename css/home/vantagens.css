@@ -1,5 +1,5 @@
 .vantagens-bg {
-  background-color: var(--cor-background);
+  background: linear-gradient(to left, var(--cor-background), #022b3f);
 }
 
 .vantagens {
