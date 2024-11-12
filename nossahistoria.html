@@ -9,14 +9,12 @@
     <link rel="icon" href="/img/fotos/logo.png" type="image/png" sizes="16x16">
     <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- FontAwesome -->
     <link rel="stylesheet" href="./css/style.css">
-
+    
     <style>
         /* Tipografia */
         body {
             font-family: 'Poppins', sans-serif;
-            /* Fonte moderna */
         }
 
         /* Rodapé */
@@ -27,12 +25,10 @@
         .footer-redes i:hover {
             transform: scale(1.2);
             color: #007BFF;
-            /* Azul no hover */
         }
 
         /* Títulos */
-        h2,
-        h3 {
+        h2, h3 {
             color: #333;
             font-weight: 600;
         }
@@ -56,6 +52,101 @@
             color: #007BFF;
         }
 
+        /* Estilos para as seções de serviço */
+        .servicos {
+            display: flex;
+            margin-bottom: 40px;
+            transition: transform 0.3s ease-in-out;
+            flex-wrap: wrap;
+        }
+
+        .servicos-imagem {
+            position: relative;
+            flex: 1;
+            max-width: 45%;
+        }
+
+        .servicos-imagem img {
+            max-width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .servicos-conteudo {
+            flex: 1;
+            padding-left: 20px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Quando o conteúdo for "zoomado" */
+        .servicos.zoomed .servicos-imagem img {
+            transform: scale(1.1);
+        }
+
+        .servicos.zoomed .servicos-conteudo {
+            transform: scale(1.05);
+        }
+
+        /* Efeito de zoom ao passar o mouse */
+        .servicos-imagem img:hover,
+        .servicos-conteudo:hover {
+            transform: scale(1.05);
+        }
+
+        /* Estilo para a lista de ícones */
+        .servicos-conteudo ul li {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .servicos-conteudo ul li i {
+            margin-right: 10px;
+            color: #ff638b;
+            font-size: 20px;
+        }
+
+        .servicos-conteudo h2 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .servicos-conteudo p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Responsividade */
+        @media (max-width: 800px) {
+            .servicos {
+                flex-direction: column;
+            }
+
+            .servicos-imagem {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .servicos-conteudo {
+                padding-left: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .servicos-conteudo h2 {
+                font-size: 1.3rem;
+            }
+
+            .servicos-conteudo p {
+                font-size: 0.9rem;
+            }
+
+            .servicos-conteudo ul li i {
+                font-size: 18px;
+            }
+        }
     </style>
 </head>
 
@@ -84,33 +175,31 @@
 
         <div class="servicos container">
             <div class="servicos-imagem">
-                <img src="./img/fotos/exemplo-imgs/exemplo-4.jpg" alt="Telemedicina">
-
+                <img src="./img/fotos/exemplo-imgs/origem-do-nome.webp" alt="Telemedicina">
             </div>
-            <div class="servicos-conteudo">
-                <h2 class="font-1-xl">A origem do nome</h2>
-                <p class="font-2-s cor-8">A rapha Open Health nasceu da visão de integrar tecnologia e saúde para transformar a forma como o cuidado é acessado. O nome ‘rapha’ combina raízes culturais antigas — ‘Ra’ representa o sol, fonte de vida e energia na cultura egípcia, enquanto ‘Pha’ remete à cura, aludindo à medicina e ao bem-estar. Essa união reflete nossa missão de iluminar o setor de saúde com inovação, promovendo um cuidado mais acessível e contínuo.</p>
-                <ul class="font-1-m cor-8">
-                    <li><i class="fas fa-sun"></i> Iluminar o Setor de Saúde com Inovação</li> <!-- Ícone de sol, simbolizando a energia e a visão de iluminar -->
-                    <li><i class="fas fa-heartbeat"></i> Promoção de Bem-Estar e Cura</li> <!-- Ícone de batimento cardíaco, simbolizando saúde e cura -->
-                    <li><i class="fas fa-laptop-medical"></i> Tecnologia de Saúde Acessível</li> <!-- Ícone de laptop médico, representando a integração da tecnologia com a saúde -->
-                    <li><i class="fas fa-user-md"></i> Profissionais de Saúde Qualificados</li> <!-- Ícone de médico, representando os profissionais envolvidos -->
+            <div class="servicos-conteudo" onclick="toggleZoom(this)">
+                <h2>A origem do nome</h2>
+                <p>A rapha Open Health nasceu da visão de integrar tecnologia e saúde para transformar a forma como o cuidado é acessado. O nome ‘rapha’ combina raízes culturais antigas — ‘Ra’ representa o sol, fonte de vida e energia na cultura egípcia, enquanto ‘Pha’ remete à cura, aludindo à medicina e ao bem-estar. Essa união reflete nossa missão de iluminar o setor de saúde com inovação, promovendo um cuidado mais acessível e contínuo.</p>
+                <ul>
+                    <li><i class="fas fa-sun"></i> Iluminar o Setor de Saúde com Inovação</li>
+                    <li><i class="fas fa-heartbeat"></i> Promoção de Bem-Estar e Cura</li>
+                    <li><i class="fas fa-laptop-medical"></i> Tecnologia de Saúde Acessível</li>
+                    <li><i class="fas fa-user-md"></i> Profissionais de Saúde Qualificados</li>
                 </ul>
             </div>
         </div>
 
         <div class="servicos container">
             <div class="servicos-imagem">
-                <img src="./img/fotos/exemplo-imgs/exemplo-6.jpg" alt="Monitoramento Remoto de Pacientes Crônicos">
-
+                <img src="./img/fotos/exemplo-imgs/nossa-historia.jpg" alt="Monitoramento Remoto de Pacientes Crônicos">
             </div>
-            <div class="servicos-conteudo">
-                <h2 class="font-1-xl">Histórico da empresa</h2>
-                <p class="font-2-s cor-8">Fundada como uma spin-off da startup VisionnIt em Passo Fundo-RS, a rapha Open Health representa o comprometimento com a pesquisa e desenvolvimento em saúde digital. Desde 2017, com parcerias importantes, como a Universidade de Passo Fundo e apoio de órgãos como CAPES, CNPQ e FINEP, a rapha se expandiu, oferecendo uma plataforma em plena operação que já impacta instituições, profissionais e pacientes no Brasil.</p>
-                <ul class="font-1-m cor-8">
-                    <li><i class="fas fa-handshake"></i> Parcerias Estratégicas com Universidades e Instituições</li> <!-- Ícone de aperto de mãos para simbolizar parcerias -->
-                    <li><i class="fas fa-flask"></i> Pesquisa e Desenvolvimento Inovadores</li> <!-- Ícone de frasco de laboratório, simbolizando pesquisa -->
-                    <li><i class="fas fa-laptop-medical"></i> Plataforma de Saúde Digital em Operação</li> <!-- Ícone de dispositivo médico para simbolizar tecnologia em saúde -->
+            <div class="servicos-conteudo" onclick="toggleZoom(this)">
+                <h2>Histórico da empresa</h2>
+                <p>Fundada como uma spin-off da startup VisionnIt em Passo Fundo-RS, a rapha Open Health representa o comprometimento com a pesquisa e desenvolvimento em saúde digital. Desde 2017, com parcerias importantes, como a Universidade de Passo Fundo e apoio de órgãos como CAPES, CNPQ e FINEP, a rapha se expandiu, oferecendo uma plataforma em plena operação que já impacta instituições, profissionais e pacientes no Brasil.</p>
+                <ul>
+                    <li><i class="fas fa-handshake"></i> Parcerias Estratégicas com Universidades e Instituições</li>
+                    <li><i class="fas fa-flask"></i> Pesquisa e Desenvolvimento Inovadores</li>
+                    <li><i class="fas fa-laptop-medical"></i> Plataforma de Saúde Digital em Operação</li>
                     <li><i class="fas fa-users"></i> Impacto em Profissionais e Pacientes</li>
                 </ul>
             </div>
@@ -134,8 +223,7 @@
                     <a href="https://linkedin.com/company/rapha-open-health" target="_blank">
                         <i class="fab fa-linkedin" style="font-size: 35px; color: white;"></i>
                     </a>
-                    <a href="https://api.whatsapp.com/send/?phone=5511999001715&text=Ol%C3%A1%2C+eu+vim+pelo+site+e+gostaria+de+mais+informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0"
-                        target="_blank">
+                    <a href="https://api.whatsapp.com/send/?phone=5511999001715&text=Ol%C3%A1%2C+eu+vim+pelo+site+e+gostaria+de+mais+informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0" target="_blank">
                         <i class="fab fa-whatsapp" style="font-size: 35px; color: white;"></i>
                     </a>
                 </div>
@@ -153,6 +241,12 @@
         </div>
     </footer>
 
+    <script>
+        function toggleZoom(element) {
+            const parent = element.closest('.servicos');
+            parent.classList.toggle('zoomed');
+        }
+    </script>
 </body>
 
 </html>
