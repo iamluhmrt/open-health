@@ -17,6 +17,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0px 40px;
+  align-items: center;
 }
 
 .introducao-conteudo {

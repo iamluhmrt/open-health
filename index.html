@@ -19,7 +19,7 @@
 <body>
   <header class="header-bg">
     <div class="header container">
-      <a href="./">
+      <a href="/index.html">
         <img src="./img/fotos/logo.png" width="66" height="66" alt="rapha Open Health Logo">
       </a>
 
@@ -49,7 +49,7 @@
         <a class="botao" href="./servicos.html">Saiba mais</a>
       </div>
 
-      <div>
+      <div class="video-container">
         <source media="(max-width: 800px)" srcset="img/videos/video-inicial.mp4" type="video/mp4">
         <video id="video-dinamico" width="1280" height="1600" autoplay loop muted playsinline style="object-fit: cover; width: 100%; height: 100%;">
           <source src="img/videos/video-inicial.mp4" type="video/mp4">
@@ -159,7 +159,7 @@
       setTimeout(() => {
         document.getElementById("preloader").style.display = "none"; // Esconde o preloader
         document.querySelector(".content").style.display = "block";  // Exibe o conteúdo da página
-      }, 2000);  // 3000 milissegundos = 3 segundos
+      }, 1000);  // 3000 milissegundos = 3 segundos
     });
   </script>
 

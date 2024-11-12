@@ -147,3 +147,55 @@ h1 {
   font-size: 18px;
   color: #666;
 }
+
+
+#video-dinamico {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  #video-dinamico {
+    object-fit: contain;
+  }
+}
+
+
+
+.video-container {
+  position: relative; /* Garante que a sombra esteja aplicada ao redor do contêiner */
+  display: inline-block; /* Permite que o contêiner se ajuste ao tamanho do vídeo */
+  width: 100%; /* Ou um tamanho fixo, se necessário */
+  height: auto; /* Permite que o contêiner ajuste a altura automaticamente conforme o vídeo */
+  max-width: 1280px; /* Ajuste o tamanho máximo conforme necessário */
+  margin: 20px auto; /* Espaçamento em torno do vídeo */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave para dar um efeito moderno */
+  border-radius: 12px; /* Bordas arredondadas para um visual mais moderno */
+  overflow: hidden; /* Garante que a sombra não ultrapasse as bordas */
+  transition: transform 0.3s ease-in-out; /* Transição suave */
+}
+
+.video-container:hover {
+  transform: rotate(2deg); /* Balanço leve para a direita */
+}
+
+
+@keyframes balanco {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg); /* Balança para a direita */
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-3deg); /* Balança para a esquerda */
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
