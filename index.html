@@ -48,13 +48,6 @@
         <p class="font-2-l cor-1">CUIDE DA SUA SAÚDE DE FORMA SEGURA E CONECTADA COM A RAPHA OPEN HEALTH.</p>
         <a class="botao" href="./servicos.html">Saiba mais</a>
       </div>
-<<<<<<< HEAD
-      <picture>
-        <source media="(max-width: 800px)" id="source-dinamico" srcset="./img/vidros/sacada/sacada-01.jpg">
-        <img src="./img/fotos/carrosel/carrosel-1.jpg" id="imagem-dinamica" width="1280" height="1600"
-          alt="carrosel-01">
-      </picture>
-=======
 
       <div>
         <source media="(max-width: 800px)" srcset="img/videos/video-inicial.mp4" type="video/mp4">
@@ -68,7 +61,6 @@
 
 
 
->>>>>>> 00bebcc78f1a460d5f77a25c954120dea1cc01a9
     </div>
   </main>
 
@@ -148,8 +140,7 @@
             <!-- Ícone do LinkedIn -->
             <i class="fab fa-linkedin" style="font-size: 35px; color: white;"></i>
           </a>
-          <a href="https://api.whatsapp.com/send/?phone=5511999001715&text=Ol%C3%A1%2C+eu+vim+pelo+site+e+gostaria+de+mais+informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0"
-            target="_blank">
+          <a href="https://api.whatsapp.com/send/?phone=5511999001715&text=Ol%C3%A1%2C+eu+vim+pelo+site+e+gostaria+de+mais+informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0" target="_blank">
             <!-- Ícone do WhatsApp -->
             <i class="fab fa-whatsapp" style="font-size: 35px; color: white;"></i>
           </a>
@@ -167,54 +158,51 @@
       <p class="footer-copy font-2-m cor-0">rapha Open Health © Todos os direitos reservados.</p>
     </div>
   </footer>
-<<<<<<< HEAD
+  <<<<<<< HEAD <!-- Adicionando o script diretamente no body -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const imagens = [
+          './img/fotos/carrosel/carrosel-1.jpg',
+          './img/fotos/carrosel/carrosel-2.jpg',
+          './img/fotos/carrosel/carrosel-3.jpg',
+          './img/fotos/carrosel/carrosel-4.jpg',
+          './img/fotos/carrosel/carrosel-5.jpg',
+        ];
+
+        let indiceAtual = 0;
+        const imagemElemento = document.getElementById('imagem-dinamica');
+        const sourceElemento = document.getElementById('source-dinamico');
+
+        function trocarImagem() {
+          indiceAtual = (indiceAtual + 1) % imagens.length;
+          imagemElemento.style.opacity = 0; // Suaviza a transição
+          setTimeout(() => {
+            imagemElemento.src = imagens[indiceAtual];
+            sourceElemento.srcset = imagens[indiceAtual]; // Atualiza o srcset para mobile
+            imagemElemento.style.opacity = 1;
+          }, 500); // Tempo para a transição de opacidade
+        }
+
+        // Troca a imagem a cada 3 segundos (3000 milissegundos)
+        setInterval(trocarImagem, 3000);
+      });
+    </script>
 
 
-  <!-- Adicionando o script diretamente no body -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const imagens = [
-        './img/fotos/carrosel/carrosel-1.jpg',
-        './img/fotos/carrosel/carrosel-2.jpg',
-        './img/fotos/carrosel/carrosel-3.jpg',
-        './img/fotos/carrosel/carrosel-4.jpg',
-        './img/fotos/carrosel/carrosel-5.jpg',
-      ];
-
-      let indiceAtual = 0;
-      const imagemElemento = document.getElementById('imagem-dinamica');
-      const sourceElemento = document.getElementById('source-dinamico');
-
-      function trocarImagem() {
-        indiceAtual = (indiceAtual + 1) % imagens.length;
-        imagemElemento.style.opacity = 0; // Suaviza a transição
+    <script>
+      window.addEventListener("load", () => {
+        // Adiciona um atraso de 3 segundos antes de esconder o preloader
         setTimeout(() => {
-          imagemElemento.src = imagens[indiceAtual];
-          sourceElemento.srcset = imagens[indiceAtual]; // Atualiza o srcset para mobile
-          imagemElemento.style.opacity = 1;
-        }, 500); // Tempo para a transição de opacidade
-      }
-
-      // Troca a imagem a cada 3 segundos (3000 milissegundos)
-      setInterval(trocarImagem, 3000);
-    });
-  </script>
-  
-
-  <script>
-    window.addEventListener("load", () => {
-      // Adiciona um atraso de 3 segundos antes de esconder o preloader
-      setTimeout(() => {
-        document.getElementById("preloader").style.display = "none"; // Esconde o preloader
-        document.querySelector(".content").style.display = "block";  // Exibe o conteúdo da página
-      }, 2000);  // 3000 milissegundos = 3 segundos
-    });
-  </script>
+          document.getElementById("preloader").style.display = "none"; // Esconde o preloader
+          document.querySelector(".content").style.display = "block";  // Exibe o conteúdo da página
+        }, 2000);  // 3000 milissegundos = 3 segundos
+      });
+    </script>
 
 
-=======
-  \
->>>>>>> 00bebcc78f1a460d5f77a25c954120dea1cc01a9
+    =======
+    \
+    >>>>>>> 00bebcc78f1a460d5f77a25c954120dea1cc01a9
 </body>
 
 </html>
