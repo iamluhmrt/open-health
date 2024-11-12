@@ -39,10 +39,27 @@
         <p class="font-2-l cor-1">CUIDE DA SUA SAÚDE DE FORMA SEGURA E CONECTADA COM A RAPHA OPEN HEALTH.</p>
         <a class="botao" href="./servicos.html">Saiba mais</a>
       </div>
-      <picture>
+      <!-- <picture>
         <source media="(max-width: 800px)" id="source-dinamico" srcset="./img/vidros/sacada/sacada-01.jpg">
         <img src="./img/fotos/carrosel/carrosel-1.jpg" id="imagem-dinamica" width="1280" height="1600" alt="carrosel-01">
+      </picture> -->
+
+      <!-- Define o vídeo para telas com largura máxima de 800px -->
+      <picture>
+        <!-- Define o vídeo para telas com largura máxima de 800px -->
+        <source media="(max-width: 800px)" srcset="img/videos/video-inicial.mp4" type="video/mp4">
+
+        <video id="video-dinamico" width="1280" height="1600" autoplay loop muted playsinline style="object-fit: cover; width: 100%; height: 100%;">
+          <source src="img/videos/video-inicial.mp4" type="video/mp4">
+          Seu navegador não suporta o formato de vídeo.
+        </video>
+
       </picture>
+
+
+
+
+
     </div>
   </main>
 
@@ -143,38 +160,7 @@
       <p class="footer-copy font-2-m cor-0">rapha Open Health © Todos os direitos reservados.</p>
     </div>
   </footer>
-
-
-  <!-- Adicionando o script diretamente no body -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const imagens = [
-        './img/fotos/carrosel/carrosel-1.jpg',
-        './img/fotos/carrosel/carrosel-2.jpg',
-        './img/fotos/carrosel/carrosel-3.jpg',
-        './img/fotos/carrosel/carrosel-4.jpg',
-        './img/fotos/carrosel/carrosel-5.jpg',
-      ];
-
-      let indiceAtual = 0;
-      const imagemElemento = document.getElementById('imagem-dinamica');
-      const sourceElemento = document.getElementById('source-dinamico');
-
-      function trocarImagem() {
-        indiceAtual = (indiceAtual + 1) % imagens.length;
-        imagemElemento.style.opacity = 0; // Suaviza a transição
-        setTimeout(() => {
-          imagemElemento.src = imagens[indiceAtual];
-          sourceElemento.srcset = imagens[indiceAtual]; // Atualiza o srcset para mobile
-          imagemElemento.style.opacity = 1;
-        }, 500); // Tempo para a transição de opacidade
-      }
-
-      // Troca a imagem a cada 3 segundos (3000 milissegundos)
-      setInterval(trocarImagem, 3000);
-    });
-  </script>
-
+  \
 </body>
 
 </html>
