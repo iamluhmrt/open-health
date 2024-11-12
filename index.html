@@ -75,7 +75,7 @@
     <ul>
       <li>
         <div class="servicos-img">
-          <img src="./img/fotos/exemplo-imgs/exemplo-3.jpg" alt="exemplo-3" width="920" height="1040">
+          <img src="./img/fotos/exemplo-imgs/plataforma.jpg" alt="exemplo-3" width="920" height="1040">
         </div>
         <div>
           <h3 class="font-1-l">A Plataforma</h3>
@@ -89,7 +89,7 @@
       </li>
       <li>
         <div class="servicos-img">
-          <img src="./img/fotos/exemplo-imgs/exemplo-2.jpg" alt="exemplo-2" width="920" height="1040">
+          <img src="./img/fotos/exemplo-imgs/beneficios-para-clientes.jpg" alt="exemplo-2" width="920" height="1040">
         </div>
         <div>
           <h3 class="font-1-l">Benefícios para Pacientes</h3>
@@ -103,7 +103,7 @@
       </li>
       <li>
         <div class="servicos-img">
-          <img src="./img/fotos/exemplo-imgs/exemplo-1.jpg" alt="exemplo-1" width="920" height="1040">
+          <img src="./img/fotos/exemplo-imgs/beneficios-para-profissionais-de-saude.jpg" alt="exemplo-1" width="920" height="1040">
         </div>
         <div>
           <h3 class="font-1-l">Benefícios para Profissionais de Saúde</h3>
@@ -158,51 +158,18 @@
       <p class="footer-copy font-2-m cor-0">rapha Open Health © Todos os direitos reservados.</p>
     </div>
   </footer>
-  <<<<<<< HEAD <!-- Adicionando o script diretamente no body -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const imagens = [
-          './img/fotos/carrosel/carrosel-1.jpg',
-          './img/fotos/carrosel/carrosel-2.jpg',
-          './img/fotos/carrosel/carrosel-3.jpg',
-          './img/fotos/carrosel/carrosel-4.jpg',
-          './img/fotos/carrosel/carrosel-5.jpg',
-        ];
 
-        let indiceAtual = 0;
-        const imagemElemento = document.getElementById('imagem-dinamica');
-        const sourceElemento = document.getElementById('source-dinamico');
-
-        function trocarImagem() {
-          indiceAtual = (indiceAtual + 1) % imagens.length;
-          imagemElemento.style.opacity = 0; // Suaviza a transição
-          setTimeout(() => {
-            imagemElemento.src = imagens[indiceAtual];
-            sourceElemento.srcset = imagens[indiceAtual]; // Atualiza o srcset para mobile
-            imagemElemento.style.opacity = 1;
-          }, 500); // Tempo para a transição de opacidade
-        }
-
-        // Troca a imagem a cada 3 segundos (3000 milissegundos)
-        setInterval(trocarImagem, 3000);
-      });
-    </script>
+  <script>
+    window.addEventListener("load", () => {
+      // Adiciona um atraso de 3 segundos antes de esconder o preloader
+      setTimeout(() => {
+        document.getElementById("preloader").style.display = "none"; // Esconde o preloader
+        document.querySelector(".content").style.display = "block";  // Exibe o conteúdo da página
+      }, 2000);  // 3000 milissegundos = 3 segundos
+    });
+  </script>
 
 
-    <script>
-      window.addEventListener("load", () => {
-        // Adiciona um atraso de 3 segundos antes de esconder o preloader
-        setTimeout(() => {
-          document.getElementById("preloader").style.display = "none"; // Esconde o preloader
-          document.querySelector(".content").style.display = "block";  // Exibe o conteúdo da página
-        }, 2000);  // 3000 milissegundos = 3 segundos
-      });
-    </script>
-
-
-    =======
-    \
-    >>>>>>> 00bebcc78f1a460d5f77a25c954120dea1cc01a9
 </body>
 
 </html>
