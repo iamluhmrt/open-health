@@ -32,46 +32,84 @@
   width: 0px;
   background: #dddce1;
   margin-top: 4px;
-  transition: 0.3s;
+  transition: 1s;
   position: absolute;
+  transition: 1s;
 }
 
 .header-menu a:hover:after {
   width: 100%;
 }
 
-@media (max-width: 800px) {
+/* Esconde o menu na versão mobile */
+.menu-toggle {
+  display: none;
+}
+
+/* Estilo para o botão de 3 tracinhos (ícone de hambúrguer) */
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.menu-icon span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #333; /* Cor do tracinho */
+  border-radius: 4px;
+}
+
+/* Exibe o menu como um bloco no mobile */
+@media (max-width: 768px) {
   .header-menu {
-    gap: 20px;
-    padding: 8px 8px;
+    display: none;
+    flex-direction: column;
+    background-color: #ff638b;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
   }
 
-  .header-menu a {
-    background: var(--cor-6);
-    padding: 12px 16px;
-    border-radius: 4px;
+  .menu-icon{
+    visibility: visible;
   }
 
-  .header-menu a:hover {
-    background-color: var(--cor-7);
+  .header-menu li {
+    margin: 10px 0;
   }
 
-  .header a:after {
+  /* Exibe o menu quando o checkbox estiver marcado */
+  .menu-toggle:checked + .menu-icon + .header-menu {
+    display: block;
+  }
+}
+
+/* Estilos para dispositivos maiores (desktop) */
+@media (min-width: 768px) {
+  .menu-toggle {
     display: none;
   }
-}
 
-@media (max-width: 600px) {
   .header-menu {
-    gap: 12px;
+    display: flex;
+    margin-left: auto;
   }
 
-  .header-menu a {
-    padding: 4px 4px;
-    font-size: 14px;
+  .header-menu li {
+    margin: 0 15px;
   }
 }
-
 
 
 /* Estilos do Preloader */
