@@ -97,7 +97,7 @@
   flex-direction: row;
 }
 
-.logo {
+.logo2 {
   width: 60px;
   height: 60px;
   margin-right: 20px;
@@ -108,7 +108,7 @@ h1 {
   font-size: 30px;
 }
 
-/* Animação de Carregamento */
+
 .loader {
   border: 8px solid rgba(255, 255, 255, 0.3);
   border-top: 8px solid white;
@@ -119,7 +119,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Efeito de rotação do círculo */
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -130,7 +130,7 @@ h1 {
   }
 }
 
-/* Estilos do Conteúdo Principal */
+
 .content {
   display: none;
   /* Escondido até o preloader desaparecer */
