@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapha Open Health</title>
+    <meta name="description" content="Serviços de saúde digital">
+    <link rel="icon" href="/img/fotos/logo.png" type="image/png" sizes="16x16">
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        /* Tipografia */
+        body {
+            font-family: 'Poppins', sans-serif;
+            /* Fonte moderna */
+        }
+
+        /* Rodapé */
+        .footer-redes i {
+            transition: transform 0.3s ease;
+        }
+
+        .footer-redes i:hover {
+            transform: scale(1.2);
+            color: #007BFF;
+            /* Azul no hover */
+        }
+
+        /* Títulos */
+        h2,
+        h3 {
+            color: #333;
+            font-weight: 600;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Ícones nos serviços */
+        ul li i {
+            margin-right: 10px;
+            color: #007BFF;
+        }
+
+    </style>
+</head>
+
+<body id="servicos">
+    <header class="header-bg">
+        <div class="header container">
+            <a href="./">
+                <img src="./img/fotos/logo.png" width="66" height="66" alt="Rapha Open Health Logo">
+            </a>
+
+            <nav aria-label="primaria">
+                <ul class="header-menu font-1-m cor-12">
+                    <li><a href="./index.html">Início</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="titulo-bg">
+            <div class="titulo container">
+                <p class="font-2-l-b cor-3">Conheça um pouco da nossa história!</p>
+            </div>
+        </div>
+
+        <div class="servicos container">
+            <div class="servicos-imagem">
+                <img src="./img/fotos/exemplo-imgs/exemplo-4.jpg" alt="Telemedicina">
+
+            </div>
+            <div class="servicos-conteudo">
+                <h2 class="font-1-xl">A origem do nome</h2>
+                <p class="font-2-s cor-8">A rapha Open Health nasceu da visão de integrar tecnologia e saúde para transformar a forma como o cuidado é acessado. O nome ‘rapha’ combina raízes culturais antigas — ‘Ra’ representa o sol, fonte de vida e energia na cultura egípcia, enquanto ‘Pha’ remete à cura, aludindo à medicina e ao bem-estar. Essa união reflete nossa missão de iluminar o setor de saúde com inovação, promovendo um cuidado mais acessível e contínuo.</p>
+                <ul class="font-1-m cor-8">
+                    <li><i class="fas fa-sun"></i> Iluminar o Setor de Saúde com Inovação</li> <!-- Ícone de sol, simbolizando a energia e a visão de iluminar -->
+                    <li><i class="fas fa-heartbeat"></i> Promoção de Bem-Estar e Cura</li> <!-- Ícone de batimento cardíaco, simbolizando saúde e cura -->
+                    <li><i class="fas fa-laptop-medical"></i> Tecnologia de Saúde Acessível</li> <!-- Ícone de laptop médico, representando a integração da tecnologia com a saúde -->
+                    <li><i class="fas fa-user-md"></i> Profissionais de Saúde Qualificados</li> <!-- Ícone de médico, representando os profissionais envolvidos -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="servicos container">
+            <div class="servicos-imagem">
+                <img src="./img/fotos/exemplo-imgs/exemplo-6.jpg" alt="Monitoramento Remoto de Pacientes Crônicos">
+
+            </div>
+            <div class="servicos-conteudo">
+                <h2 class="font-1-xl">Histórico da empresa</h2>
+                <p class="font-2-s cor-8">Fundada como uma spin-off da startup VisionnIt em Passo Fundo-RS, a rapha Open Health representa o comprometimento com a pesquisa e desenvolvimento em saúde digital. Desde 2017, com parcerias importantes, como a Universidade de Passo Fundo e apoio de órgãos como CAPES, CNPQ e FINEP, a rapha se expandiu, oferecendo uma plataforma em plena operação que já impacta instituições, profissionais e pacientes no Brasil.</p>
+                <ul class="font-1-m cor-8">
+                    <li><i class="fas fa-handshake"></i> Parcerias Estratégicas com Universidades e Instituições</li> <!-- Ícone de aperto de mãos para simbolizar parcerias -->
+                    <li><i class="fas fa-flask"></i> Pesquisa e Desenvolvimento Inovadores</li> <!-- Ícone de frasco de laboratório, simbolizando pesquisa -->
+                    <li><i class="fas fa-laptop-medical"></i> Plataforma de Saúde Digital em Operação</li> <!-- Ícone de dispositivo médico para simbolizar tecnologia em saúde -->
+                    <li><i class="fas fa-users"></i> Impacto em Profissionais e Pacientes</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer-bg">
+        <div class="footer container">
+            <img src="./img/fotos/logo.png" alt="Rapha Open Health" width="150" height="70" class="logo">
+            <div class="footer-contato">
+                <h3 class="font-2-l-b cor-0">Contato</h3>
+                <ul class="font-2-m cor-3">
+                    <li><a href="tel:+551121107073">(11) 2110-7073</a></li>
+                    <li><a href="mailto:contato@rapha.health.com">contato@rapha.health.com</a></li>
+                </ul>
+                <div class="footer-redes">
+                    <a href="https://instagram.com/rapha.open.Diminhealth" target="_blank">
+                        <i class="fab fa-instagram" style="font-size: 35px; color: white;"></i>
+                    </a>
+                    <a href="https://linkedin.com/company/rapha-open-health" target="_blank">
+                        <i class="fab fa-linkedin" style="font-size: 35px; color: white;"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send/?phone=5511999001715&text=Ol%C3%A1%2C+eu+vim+pelo+site+e+gostaria+de+mais+informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0"
+                        target="_blank">
+                        <i class="fab fa-whatsapp" style="font-size: 35px; color: white;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-informacoes">
+                <h3 class="font-2-l-b cor-0">Informações</h3>
+                <nav>
+                    <ul class="font-1-m cor-3">
+                        <li><a href="./servicos.html">Serviços</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="footer-copy font-2-m cor-0">Rapha Open Health © Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -25,12 +25,21 @@
 
       <nav aria-label="primaria">
         <ul class="header-menu font-1-m cor-12">
-          <li><a href="./servicos.html">A rapha Open Health</a></li>
+          <li><a href="./nossahistoria.html">Nossa história</a></li>
           <li><a href="./contato.html">Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
+
+  <div id="preloader">
+    <div class="loader"></div>
+    <div class="preloader-content">
+      <img src="img/fotos/logo.png" alt="Rapha Open Health Logo" class="logo">
+      <h1>Rapha Open-Health</h1>
+    </div>
+  </div>
 
   <main class="introducao-bg">
     <div class="introducao container">
@@ -41,15 +50,20 @@
       </div>
       <picture>
         <source media="(max-width: 800px)" id="source-dinamico" srcset="./img/vidros/sacada/sacada-01.jpg">
-        <img src="./img/fotos/carrosel/carrosel-1.jpg" id="imagem-dinamica" width="1280" height="1600" alt="carrosel-01">
+        <img src="./img/fotos/carrosel/carrosel-1.jpg" id="imagem-dinamica" width="1280" height="1600"
+          alt="carrosel-01">
       </picture>
     </div>
   </main>
 
   <article class="servicos-lista">
     <h2 class="container font-1-xl">Quem somos</h2>
-    <p class="container font-2-m  cor-8 servicos-quem-somos">A rapha Open Health acredita que o acesso à saúde é um direito de todos e trabalha
-      para reduzir as desigualdades regionais. Com soluções inovadoras, nossa plataforma apoia pacientes, profissionais e instituições na construção de um sistema de saúde mais acessível e inclusivo. Alinhada aos Objetivos de Desenvolvimento Sustentável da ONU, a rapha Open Health contribui para um futuro em que todos têm acesso a cuidados de saúde contínuos e de qualidade, fortalecendo comunidades e promovendo a equidade.</p>
+    <p class="container font-2-m  cor-8 servicos-quem-somos">A rapha Open Health acredita que o acesso à saúde é um
+      direito de todos e trabalha
+      para reduzir as desigualdades regionais. Com soluções inovadoras, nossa plataforma apoia pacientes, profissionais
+      e instituições na construção de um sistema de saúde mais acessível e inclusivo. Alinhada aos Objetivos de
+      Desenvolvimento Sustentável da ONU, a rapha Open Health contribui para um futuro em que todos têm acesso a
+      cuidados de saúde contínuos e de qualidade, fortalecendo comunidades e promovendo a equidade.</p>
     <ul>
       <li>
         <a href="./contato.html">
@@ -125,7 +139,8 @@
             <!-- Ícone do LinkedIn -->
             <i class="fab fa-linkedin" style="font-size: 35px; color: white;"></i>
           </a>
-          <a href="https://api.whatsapp.com/send/?phone=5511999001715&text=Ol%C3%A1%2C+eu+vim+pelo+site+e+gostaria+de+mais+informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0" target="_blank">
+          <a href="https://api.whatsapp.com/send/?phone=5511999001715&text=Ol%C3%A1%2C+eu+vim+pelo+site+e+gostaria+de+mais+informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0"
+            target="_blank">
             <!-- Ícone do WhatsApp -->
             <i class="fab fa-whatsapp" style="font-size: 35px; color: white;"></i>
           </a>
@@ -174,6 +189,18 @@
       setInterval(trocarImagem, 3000);
     });
   </script>
+  
+
+  <script>
+    window.addEventListener("load", () => {
+      // Adiciona um atraso de 3 segundos antes de esconder o preloader
+      setTimeout(() => {
+        document.getElementById("preloader").style.display = "none"; // Esconde o preloader
+        document.querySelector(".content").style.display = "block";  // Exibe o conteúdo da página
+      }, 2000);  // 3000 milissegundos = 3 segundos
+    });
+  </script>
+
 
 </body>
 
