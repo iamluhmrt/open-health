@@ -2,7 +2,7 @@
   background: linear-gradient(
     to right,
     var(--cor-0) 30%,
-    var(--cor-background) 0%
+    #022b3f 0%
   );
 }
 
