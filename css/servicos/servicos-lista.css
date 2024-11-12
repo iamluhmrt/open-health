@@ -8,7 +8,7 @@
 }
 
 .servicos-quem-somos {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .servicos-lista ul {
   display: flex;
@@ -45,10 +45,9 @@
   /* margin-bottom: 16px; */
 }
 
-.servicos-lista li:nth-of-type(3) .servicos-img img {
-  object-position: center top; /* ou 'scale-down' ou 'none', dependendo do ajuste desejado */
-  /* Ajustes adicionais se necessário */
-}
+/* .servicos-lista .servicos-img img {
+  object-position: center top;
+} */
 
 .servicos-lista h3 {
   margin-bottom: 8px;
