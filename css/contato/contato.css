@@ -7,6 +7,11 @@
   grid-template-columns: 5fr 7fr;
 }
 
+.background-main-sucesso {
+  background: #022b3f;
+  padding-bottom: 100px;
+}
+
 .contato-dados,
 .contato-formulario {
   padding: 60px;
