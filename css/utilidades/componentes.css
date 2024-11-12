@@ -101,7 +101,7 @@
   }
   .titulo p {
     font-size: 1rem;
-    text-transform: lowercase;
+    text-transform: uppercase;
     font-weight: 400;
   }
 }

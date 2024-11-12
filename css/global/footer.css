@@ -1,25 +1,22 @@
 .footer-bg {
-  background:linear-gradient(45deg, #013145, #97d7e1) ;
+  background: linear-gradient(45deg, #013145, #97d7e1);
 }
 
-
 .footer-redes a {
-  text-decoration: none;  
-  margin: 0 10px;         
+  text-decoration: none;
+  margin: 0 10px;
 }
 
 .footer-redes i {
-  font-size: 40px;   
-  color: white;      
-  transition: transform 0.3s ease, color 0.3s ease; 
+  font-size: 40px;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
-
 
 .footer-redes i:hover {
-  transform: scale(1.2); 
-  color: #0077b5;        
+  transform: scale(1.2);
+  color: #0077b5;
 }
-
 
 .footer {
   display: grid;
@@ -27,6 +24,10 @@
   gap: 10px;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.footer-margin {
+  margin-top: 40px;
 }
 
 .footer h3 {
