@@ -7,6 +7,9 @@
   margin-bottom: 40px;
 }
 
+.servicos-quem-somos {
+  margin-bottom: 20px;
+}
 .servicos-lista ul {
   display: flex;
   gap: 40px;
