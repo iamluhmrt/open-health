@@ -1,5 +1,5 @@
 .header-bg {
-  background-color: var(--cor-12);
+  background-color: var(--cor-p6);
 }
 
 .header {
@@ -30,7 +30,7 @@
   display: block;
   height: 2px;
   width: 0px;
-  background: var(--cor-p6);
+  background: #dddce1;
   margin-top: 4px;
   transition: 0.3s;
   position: absolute;
