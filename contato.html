@@ -14,7 +14,26 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+  <style>
+    /* Container to hold icon and text side-by-side */
+    .address-container {
+      display: flex;
+      align-items: center;
+      color: #ccc;
+      /* Text color */
+      font-size: 16px;
+      margin-bottom: 35px;
+    }
 
+    .address-container i {
+      color: #61B5FF;
+      /* Blue icon color */
+      font-size: 24px;
+      /* Icon size */
+      margin-right: 8px;
+      /* Space between icon and text */
+    }
+  </style>
 </head>
 
 <body id="contato">
@@ -43,7 +62,7 @@
     </div>
   </header>
 
-  <main>
+  <main class="background-main-sucesso">
     <div class="titulo-bg">
       <div class="titulo container">
         <p class="font-2-l font-titulo cor-3">Respostas em até 24h</p>
@@ -60,6 +79,11 @@
         <address class="contato-meios font-2-s cor-4">
           <a href="mailto:contato@rapha.health.com">contato@rapha.health.com</a>
         </address>
+        <div class="address-container">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Av. Brigadeiro Faria Lima 1572 - Sala 1022 - Jardim Paulistano - São Paulo/SP - 01451-917</span>
+        </div>
+
         <div class="contato-redes">
           <div class="contato-redes">
             <!-- Substituir # por link desejado -->
@@ -104,25 +128,7 @@
   </main>
 
 
-  <article class="lojas container">
-    <h2 class="font-1-xxl">Endereço Físico<span class="cor-p6">.</span></h2>
-    <div class="lojas-item">
-      <img src="./img/lojas/mapa.png" alt="mapa marcando o endereço em Rua Ali Perto, 25 - Rio de Janeiro - RJ">
-      <div class="lojas-conteudo">
-        <h3 class="font-1-xl">Atendimento Presencial</h3>
-        <div class="lojas-dados font-2-s cor-8">
-          <p>Av. Brigadeiro Faria Lima, 1572, Sala 1022/1374 - Ed. Barão de Rothschild, Jardim Paulistano, São Paulo -
-            SP, 01451-917.</p>
-        </div>
-        <div class="lojas-dados font-2-s cor-8">
-          <a href="mailto:rj@bikcraft.com">contato@rapha.health.com</a>
-          <a href="tel:+552199999999">+55 21 9999-9999</a>
-        </div>
-        <p class="lojas-tempo font-1-s"><img src="./img/icones/horario.svg" alt="">08-18h de seg à dom</p>
-      </div>
-    </div>
 
-  </article>
 
   <!-- <article class="perguntas container">
     <h2 class="font-1-xl">PERGUNTAS FREQUENTES</h2> -->

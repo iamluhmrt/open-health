@@ -1,9 +1,11 @@
 .servicos-bg {
-  background: linear-gradient(
-    to right,
-    var(--cor-0) 30%,
-    #022b3f 0%
-  );
+  background: linear-gradient(to right, var(--cor-0) 30%, #022b3f 0%);
+}
+
+.detail-size {
+  width: 80px;
+  height: 20px;
+  padding: 8px 16px 8px 8px;
 }
 
 .servicos {
