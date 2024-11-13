@@ -1,11 +1,137 @@
 .introducao-bg {
-  background-image: linear-gradient(to left, var(--cor-background), #022b3f),
-    url('../../img/dec/bottom-left.svg');
-  background-position: center, bottom 160px left 20px;
-  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* Ou a altura que você desejar */
 
-  /* box-shadow: inset 0 -120px var(--cor-0); */
 }
+
+
+/* Estilo do vídeo de fundo */
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Faz o vídeo cobrir toda a área, mantendo a proporção */
+  z-index: -1;
+  /* Coloca o vídeo atrás do conteúdo */
+}
+
+/* Conteúdo em cima do vídeo */
+.introducao.container {
+  position: relative;
+  z-index: 1;
+  /* Garante que o conteúdo fique sobre o vídeo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* Garantir que o conteúdo ocupe toda a altura */
+  text-align: center;
+  color: white;
+  /* Cor do texto */
+  padding: 0 20px;
+  /* Adiciona algum espaçamento nas laterais */
+}
+
+/* Estilo do conteúdo */
+.introducao-conteudo h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.introducao-conteudo p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.botao {
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.botao:hover {
+  background-color: #0056b3;
+}
+
+/* Media Query para dispositivos móveis */
+@media (max-width: 768px) {
+  .introducao-conteudo h1 {
+    font-size: 2.2rem;
+    /* Reduz o tamanho do título em telas menores */
+    margin-bottom: 15px;
+  }
+
+  .introducao-conteudo p {
+    font-size: 1.2rem;
+    /* Reduz o tamanho do parágrafo */
+    margin-bottom: 20px;
+  }
+
+  .botao {
+    padding: 10px 20px;
+    /* Ajusta o botão para telas menores */
+    font-size: 1rem;
+  }
+
+  /* Ajusta o vídeo para ter uma altura e largura proporcional no mobile */
+  #background-video {
+    height: 70%;
+    /* Reduz a altura do vídeo para 70% da altura da tela */
+    top: 0;
+    /* Garante que o vídeo comece no topo */
+  }
+
+  /* Ajusta a altura da seção para que o conteúdo se ajuste melhor */
+  .introducao.container {
+    height: auto;
+    /* Permite que o conteúdo se ajuste conforme necessário */
+    padding: 20px;
+    /* Mais padding em dispositivos móveis */
+  }
+}
+
+@media (max-width: 480px) {
+  .introducao-conteudo h1 {
+    font-size: 1.8rem;
+    /* Reduz ainda mais o tamanho do título em telas muito pequenas */
+    margin-bottom: 10px;
+  }
+
+  .introducao-conteudo p {
+    font-size: 1rem;
+    /* Diminui ainda mais o tamanho do texto */
+    margin-bottom: 15px;
+  }
+
+  .botao {
+    padding: 8px 15px;
+    /* Ajusta o tamanho do botão */
+    font-size: 0.9rem;
+  }
+
+  /* Ajusta a altura do vídeo para 60% em telas muito pequenas */
+  #background-video {
+    height: 60%;
+    /* Diminui ainda mais a altura do vídeo em telas menores */
+  }
+
+  .introducao.container {
+    height: auto;
+    padding: 10px;
+    /* Reduz padding em telas muito pequenas */
+  }
+}
+
+
+
 
 #imagem-dinamica {
   transition: opacity 1s ease-in-out;
@@ -40,24 +166,3 @@
   margin-bottom: 20px;
 }
 
-@media (max-width: 800px) {
-  .introducao-bg {
-    background: var(--cor-background);
-    padding-top: 40px;
-    box-shadow: inset 0 -60px #ffffff;
-  }
-  .introducao {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-  .introducao-conteudo {
-    padding: 0px;
-  }
-  .introducao h1 {
-    margin-bottom: 16px;
-  }
-  .introducao img {
-    height: 300px;
-    width: 100%;
-  }
-}

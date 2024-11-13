@@ -20,7 +20,7 @@
   <header class="header-bg">
     <div class="header container">
       <a href="/index.html">
-        <img src="./img/fotos/logo.png" width="66" height="66" alt="rapha Open Health Logo">
+        <img src="./img/fotos/logo.png" width="130" height="66" alt="rapha Open Health Logo">
       </a>
 
       <nav aria-label="primaria">
@@ -47,26 +47,27 @@
     <div class="loader"></div>
     <div class="preloader-content">
       <img src="img/fotos/logo.png" alt="Rapha Open Health Logo" class="logo2">
-      <h1>Rapha Open-Health</h1>
+      <h1>rapha Open Health </h1>
     </div>
   </div>
 
   <main class="introducao-bg">
+    <!-- Vídeo de fundo -->
+    <video autoplay loop muted playsinline id="background-video">
+      <source src="img/videos/video-inicial.mp4" type="video/mp4">
+      Seu navegador não suporta o formato de vídeo.
+    </video>
+  
+    <!-- Conteúdo -->
     <div class="introducao container">
       <div class="introducao-conteudo">
         <h1 class="font-1-xl cor-0">A NOVA ERA DA SAÚDE DIGITAL</h1>
         <p class="font-2-l cor-1">CUIDE DA SUA SAÚDE DE FORMA SEGURA E CONECTADA COM A RAPHA OPEN HEALTH.</p>
         <a class="botao" href="./servicos.html">Saiba mais</a>
       </div>
-
-      <div class="video-container">
-        <source media="(max-width: 800px)" srcset="img/videos/video-inicial.mp4" type="video/mp4">
-        <video id="video-dinamico" width="1280" height="1600" autoplay loop muted playsinline style="object-fit: cover; width: 100%; height: 100%;">
-          <source src="img/videos/video-inicial.mp4" type="video/mp4">
-          Seu navegador não suporta o formato de vídeo.
-        </video>
-      </div>
+    </div>
   </main>
+  
 
   <article class="servicos-lista">
     <h2 class="container font-1-xl">Quem somos</h2>
@@ -154,7 +155,7 @@
         <h3 class="font-2-l-b cor-0">Informações</h3>
         <nav>
           <ul class="font-1-m cor-3">
-            <li><a href="./servicos.html">Servicos</a></li>
+            <li><a href="./nossahistoria.html">Nossa História</a></li>
             <li><a href="./contato.html">Contato</a></li>
           </ul>
         </nav>
