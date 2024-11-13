@@ -3,9 +3,11 @@
   width: 100%;
   height: 100vh;
   /* Ou a altura que você desejar */
-
 }
 
+.padding-top {
+  margin-top: 35px;
+}
 
 /* Estilo do vídeo de fundo */
 #background-video {
@@ -130,9 +132,6 @@
   }
 }
 
-
-
-
 #imagem-dinamica {
   transition: opacity 1s ease-in-out;
   /* max-width: 100%; */
@@ -165,4 +164,3 @@
 .introducao p {
   margin-bottom: 20px;
 }
-
