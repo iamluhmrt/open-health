@@ -8,6 +8,9 @@
 .padding-top {
   margin-top: 35px;
 }
+.padding-top-maior {
+  margin-top: 90px;
+}
 
 /* Estilo do vídeo de fundo */
 #background-video {
@@ -61,6 +64,12 @@
 
 .botao:hover {
   background-color: #0056b3;
+}
+
+.imagem-ajustada {
+  max-height: 50%; /* Ajuste esse valor conforme necessário */
+  object-fit: contain; /* Preserva as proporções da imagem */
+  margin-top: 65px;
 }
 
 /* Media Query para dispositivos móveis */
