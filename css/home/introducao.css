@@ -74,6 +74,10 @@
 
 /* Media Query para dispositivos móveis */
 @media (max-width: 768px) {
+  .introducao-bg {
+    height: 600px;
+  }
+
   .introducao-conteudo h1 {
     font-size: 2.2rem;
     /* Reduz o tamanho do título em telas menores */
@@ -90,14 +94,6 @@
     padding: 10px 20px;
     /* Ajusta o botão para telas menores */
     font-size: 1rem;
-  }
-
-  /* Ajusta o vídeo para ter uma altura e largura proporcional no mobile */
-  #background-video {
-    height: 70%;
-    /* Reduz a altura do vídeo para 70% da altura da tela */
-    top: 0;
-    /* Garante que o vídeo comece no topo */
   }
 
   /* Ajusta a altura da seção para que o conteúdo se ajuste melhor */
@@ -126,12 +122,6 @@
     padding: 8px 15px;
     /* Ajusta o tamanho do botão */
     font-size: 0.9rem;
-  }
-
-  /* Ajusta a altura do vídeo para 60% em telas muito pequenas */
-  #background-video {
-    height: 60%;
-    /* Diminui ainda mais a altura do vídeo em telas menores */
   }
 
   .introducao.container {
