@@ -49,23 +49,50 @@
   object-position: center top;
 } */
 
+.padding-top-maior {
+  margin-top: 70px;
+}
+
 .servicos-lista h3 {
   margin-bottom: 8px;
   display: flex;
   align-items: center;
 }
 
-.servicos-lista h3::before {
+/* .servicos-lista h3::after {
   content: '';
   display: inline-block;
   height: 8px;
   width: 12px;
-  margin-right: 8px;
+  margin-left: 1vw;
+  background-color: var(--cor-p6);
+  transition: width 0.2s;
+} */
+
+/* Estilo comum para todos os h3 */
+.servicos-lista h3::after {
+  content: '';
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  margin-left: 1vw;
   background-color: var(--cor-p6);
   transition: width 0.2s;
 }
 
-.servicos-lista a:hover h3::before {
+.servicos-lista h3.plataforma-detalhe::after {
+  margin-left: 50%;
+}
+
+.servicos-lista h3.pacientes-detalhe::after {
+  margin-left: 50%;
+}
+
+.servicos-lista h3.profissionais-detalhe::after {
+  margin-left: 20%;
+}
+
+.beneficios-profissionais .servicos-lista a:hover h3::after {
   width: 24px;
 }
 
@@ -76,6 +103,16 @@
 @media (max-width: 600px) {
   .servicos-lista li span {
     padding-left: 0;
+  }
+
+  .servicos-lista h3.plataforma-detalhe::after {
+    margin-left: 40%;
+  }
+  .servicos-lista h3.pacientes-detalhe::after {
+    margin-left: 30%;
+  }
+  .servicos-lista h3.profissionais-detalhe::after {
+    margin-left: 5%;
   }
 }
 
